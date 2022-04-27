@@ -12,7 +12,7 @@ body {
 }
 
 h2 {
-    margin: 8px 8px 16px 0px;
+    margin: 24px 8px 16px 0px;
     font-family: "Garamond";
 }
 
@@ -41,7 +41,7 @@ h3 {
 #nav-vert {
     list-style-type: none;
     padding: 0;
-    margin: 15px 0 0 10px;
+    margin: 34px 0 0 10px;
     font-size: 14px;
 }
 
@@ -69,3 +69,14 @@ p {
     font-size: 14px;
     margin-top: 0;
 }
+
+ol {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #545677;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+li.content:not(:last-child) { 
+    margin-bottom: 8px;  
+ }
