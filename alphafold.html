@@ -31,12 +31,75 @@
                 </div>
             </div>
             <div class="column middle">
-                <h2>AlphaFold</h2>
+                <h2>Modeling receptor-binding with AlphaFold</h2>
+
+                <p>
+                    If you’ve read through the olfactory pathway page and are interested
+                    in a more detailed description of how odorants bind to olfactory receptors (ORs),
+                    look no further!
+                </p>
 
                 <div>
                     <h3>Protein-ligand bonding</h3>
                     <p>
-                        
+                        A <b>ligand</b> is a chemical compound or protein that is capable of binding to a protein. The ligands we care about in
+                        olfaction are <b>odorant molecules</b>. Molecular interactions, steric effects (energy-driven interactions that
+                        influence a molecule's shape and reactivity), and other physical and chemical properties govern whether a ligand
+                        will bind a protein. Oftentimes, binding is localized to a certain location on the protein, called the <b>active site</b>. 
+                        The binding mechanism is analogous to encryption and decryption in some ways. Compounds can be thought of as encrypted files, 
+                        where certain strings of atoms within the molecule are the strings of information hidden in the file. Proteins on the other 
+                        hand, are analogous to decryption algorithms required for access to the encrypted data. When atoms of specific amino acids 
+                        of a protein form bonds with atoms of the compound, the protein decodes the message being sent by the compound by altering its conformation.
+                    </p>
+
+                    <p>
+                        Though it is not inherent in all compound-protein interactions, conformational alteration of the protein is a common
+                        response to interaction with a compound. This detail is crucial for understanding that an odorant binding to the
+                        olfactory receptor adjusts conformation of the protein in a way that triggers a cascade of events. The change in
+                        conformation is necessary to ensure that the signal cascade is not continuously activated. The binding event is the
+                        “on-switch”.
+                    </p>
+
+                    <h3>Developments in 3D visualizations of odorant-OR interactions</h3>
+
+                    <h4>Why is it so difficult to generate 3D visualizations of odorant-OR interactions?</h4>
+                    
+                    <p>
+                        There is limited knowledge of the specific binding of olfactory receptor proteins to odorants because it is difficult to
+                        conduct experiments that accurately depict what is happening <em>in vivo</em> (in the body). Olfactory receptors are G-protein
+                        coupled receptors (GPCR). GPCRs have posed challenges for researchers as isolation of intact GPCRs through experimental
+                        means is almost impossible.
+                    </p>
+
+                    <p>
+                        However, what we can deduce experimentally is whether or not a certain molecule will bind an olfactory receptor. In some
+                        cases, the binding affinity – how strong a compound’s interaction with the protein is – can be determined. Advances in
+                        machine learning, as well as the breakthroughs in protein modeling with Alpha Fold are promising steps toward
+                        a computational method for predicted compound-protein interactions in the near future.
+                    </p>
+
+                    <h4>What is AlphaFold?</h4>
+                    <p>
+                        The AlphaFold project was started in 2016 by DeepMind, and the source code for the AI system was made available to the
+                        public in 2020. AlphaFold2, an updated version of AlphaFold has successfully achieved protein structure
+                        accuracy comparable to that of experimental procedures in labs. Generally, an accuracy of above 90% is considered to be
+                        within the threshold required for a predicted structure to be considered reliable. This bodes very well for researcher’s
+                        ability to visualize and predict structures of GPCRs.
+                    </p>
+
+                    <h4>How does it work?</h4>
+                    <p>
+                        Amino acid sequences, the primary structure of proteins, serve as input to the program. The idea is to enter the amino
+                        acid sequence derived from the genetic code of a protein and receive a 3D model of the protein as output. The model
+                        consists of a recurrent convolutional neural network (CNN) applied to sequence alignments between the amino acid
+                        sequence of the input and amino acid sequences of homologous proteins with known 3D structures from genetic databases.
+                        Iterative refinement is implemented to continually adjust the conformation as the algorithm runs.
+                    </p>
+
+                    <p>
+                        AlphaFold has revolutionized 3D protein modeling, but the system is simply the tip of the iceberg in terms of predicting
+                        the vast array of conformations individual proteins can take on. With promising results for structural analysis of
+                        GPCRs, depictions of olfactory receptors interacting with odorants is surely not far off.
                     </p>
                 </div>
             </div>
