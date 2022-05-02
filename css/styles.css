@@ -63,6 +63,16 @@ h4 {
     margin-bottom: 24px;
 }
 
+.f-groups {
+    list-style-type: none;
+    font-size: 14px;
+    color:#545677;
+    padding: 0;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
 #nav-vert li:not(:last-child) { 
    margin-bottom: 5px;  
 }
