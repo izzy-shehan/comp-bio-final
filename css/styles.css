@@ -104,3 +104,8 @@ li.content:not(:last-child) {
 .last {
     margin-bottom: 100px;
 }
+
+.image {
+    text-align: center;
+    padding-top: 20px;
+}
